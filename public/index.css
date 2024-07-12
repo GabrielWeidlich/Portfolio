@@ -1,0 +1,9 @@
+body{
+    background-color: #414141;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
