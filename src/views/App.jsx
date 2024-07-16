@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import Info from "../components/Info"
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Portfolio from '../components/Portfolio'
 
 const App = (props)=>{
     return(
@@ -11,6 +12,7 @@ const App = (props)=>{
             <Info/>
             <About/>
             <Skills/>
+            <Portfolio/>
         </div>
     )
 }

@@ -1,0 +1,111 @@
+.portfolio {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    height: auto;
+    width: 100vh;
+    position: relative;
+    flex-direction: column;
+    color: #f2f2f2;
+}
+
+.portfolio-title {
+    color: #f2f2f2;
+    line-height: 0.5rem;
+}
+
+.portfolio-content {
+    display: flex;
+    height: auto;
+    min-height: 15rem;
+    background-color: #3a3939;
+    position: relative;
+    border-radius: 15px;
+    flex-direction: row;
+}
+
+.content-img {
+    width: 50%;
+    background-image: url('../../public/img/NodeNotes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px 0 0 15px;
+}
+
+.content-info {
+    width: 50%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    text-align: justify;
+    margin-right: 1rem; 
+}
+
+.content-info span {
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.5rem;
+}
+.content-info p {
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.btn-project {
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn-repository {
+    background-color: #1a1919;
+    color: #f2f2f2;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0 0 1rem 1rem;
+    cursor: pointer;
+}
+
+.part{
+    display: flex;
+    justify-content: space-between;
+}
+
+.part-icons{
+    margin-left: 0.3rem;
+}
+
+@media(max-width:1000px) {
+    .portfolio {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .content-img {
+        height: 13rem;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content-info {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:760px){
+    .content-img{
+        max-height: 20rem;
+    }
+}

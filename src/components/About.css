@@ -25,9 +25,10 @@
 
 .about p{
     color: white;
-    line-height: normal;
+    line-height: 1.5rem;
     text-align: justify;
     padding-right: 1.5rem;
+    font-size: 17px;
 }
 
 .about-text{
@@ -55,7 +56,7 @@
     }
 
     .about p{
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 

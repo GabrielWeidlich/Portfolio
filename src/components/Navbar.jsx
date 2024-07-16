@@ -35,11 +35,11 @@ export default (props) => {
                     <nav className={`nav-options ${showMenu ? 'show' : ''}`}>
 
                         <ul className="ul-options">
-                            <li><a className="aTag" href="#">Home</a></li>
-                            <li><a className="aTag" href="#">Sobre</a></li>
+                            <li><a className="aTag" href="#info">Home</a></li>
+                            <li><a className="aTag" href="#about">Sobre</a></li>
                             <li><a className="aTag" href="#skills">Skills</a></li>
-                            <li><a className="aTag" href="#">Portfólio</a></li>
-                            <li><a className="aTag" href="#">Contato</a></li>
+                            <li><a className="aTag" href="#portfolio">Portfólio</a></li>
+                            <li><a className="aTag" href="#contact">Contato</a></li>
                         </ul>
                         
                     </nav>

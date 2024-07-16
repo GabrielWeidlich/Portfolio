@@ -6,10 +6,10 @@ import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default (props) => {
     return (
         <div className="container">
-            <div className="info">
+            <div className="info" id="info">
                 
                     <div className="info-text">
-                        <h3>Olá, eu sou Gabriel Weidlich!</h3>
+                        <h3 >Olá, eu sou Gabriel Weidlich!</h3>
                         <span>Desenvolvedor FullStack</span>
                         
                     </div>

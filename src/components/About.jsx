@@ -4,7 +4,7 @@ import './About.css'
 export default (props) => {
     return (
         <div className="container">
-            <div className="about">
+            <div className="about" id="about">
                 <div className="about-line"></div>
                 <div className="about-text">
                     <h3>Sobre mim</h3>
