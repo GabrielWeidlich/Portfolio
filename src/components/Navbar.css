@@ -1,30 +1,27 @@
-* {
-    box-sizing: border-box;
-}
 
-.container {
+
+.container{
     display: flex;
     justify-content: center;
 }
 
 .navbar {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     height: auto;
     min-height: 4.2rem;
     width: 100vh;
     background-color: #3a3939;
     position: relative;
-    border-radius: 20px;
+    border-radius: 15px;
+    font-weight: 500;
 
 }
 
-.nav-options {
-    position: relative;
+.nav-content{
     display: flex;
     justify-content: end;
     width: 100%;
-
 }
 
 .menu-btn {
@@ -34,11 +31,21 @@
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
-    padding-left: 90%;
+    padding-top: 1.2rem;
+    padding-right: 1.2rem;
 }
 
-.defaultPadding{
-    padding: 1.2rem;
+
+
+.ul-options{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    padding-bottom: 5px;
 }
 
 @media (max-width: 900px) {
@@ -60,6 +67,11 @@
 
     .nav-options.show {
         display: flex;
+        transition: 0.5s;
+    }
+
+    .ul-options{
+        flex-direction: column;
     }
 
 }
@@ -68,24 +80,25 @@
     .navbar {
         margin-left: 1rem;
         margin-right: 1rem;
-
     }
 }
 
 .fire-icon {
     font-size: 2rem;
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
 }
 
 .aTag {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     text-decoration: none;
     padding-right: 1rem;
 }
 
 .aTag:hover {
-    background: linear-gradient(to right, #6609f1, #ef1bf7);
+    background: linear-gradient(to right,#74EBD5 ,#9FACE6 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 500;
     
 }

@@ -5,20 +5,23 @@ import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default (props) => {
     return (
-        <div className="container-info">
+        <div className="container">
             <div className="info">
-                <section className="info-titles">
-                    <h3>Olá, eu sou Gabriel Weidlich!</h3>
-                    <span className="dev-fullstack">Desenvolvedor Full Stack</span>
-                    <div className="sepair-btn">
-                        <button className="contact-btn">Contate me</button>
+                
+                    <div className="info-text">
+                        <h3>Olá, eu sou Gabriel Weidlich!</h3>
+                        <span>Desenvolvedor FullStack</span>
+                        
                     </div>
-                    <div className="sepair-icons">
-                        <a href="https://github.com/GabrielWeidlich" target="blank"><FontAwesomeIcon className="icons" icon={faSquareGithub} style={{ color: '#f2f2f2' }} /></a>
-                        <a href="https://www.linkedin.com/in/gabriel-weidlich-/" target="blank"><FontAwesomeIcon className="icons" icon={faLinkedin} style={{ color: '#f2f2f2' }} /></a>
-                    </div>
-                </section>
 
+                    <div className="info-content">
+                        <button className="contact-btn">Contate me</button><br />
+                        
+                            <a href="https://github.com/GabrielWeidlich" target="blank"><FontAwesomeIcon className="icons" icon={faSquareGithub} style={{ color: '#f2f2f2' }} /></a>
+                            <a href="https://www.linkedin.com/in/gabriel-weidlich-/" target="blank"><FontAwesomeIcon className="icons" icon={faLinkedin} style={{ color: '#f2f2f2' }} /></a>
+                        
+                    </div>
+                
             </div>
         </div>
     )

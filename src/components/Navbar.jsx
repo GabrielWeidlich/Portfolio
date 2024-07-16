@@ -27,23 +27,26 @@ export default (props) => {
 
     return (
         <div className="container">
-            <div className="navbar defaultPadding">
-                <FontAwesomeIcon className="fire-icon" icon={faFire} size="2xl" style={{ color: '#6609f1' }} />
+            <div className="navbar">
+                
+                    <FontAwesomeIcon className="fire-icon" icon={faFire} size="2xl" style={{ color: '#74EBD5'}} />
 
+                <div className="nav-content">
+                    <nav className={`nav-options ${showMenu ? 'show' : ''}`}>
 
-                <nav className={`nav-options ${showMenu ? 'show' : ''}`}>
-
-                    <a className="aTag" href="#">Home</a>
-                    <a className="aTag" href="#">Sobre</a>
-                    <a className="aTag" href="#">Skills</a>
-                    <a className="aTag" href="#">Portfólio</a>
-                    <a className="aTag" href="#">Contato</a>
-
-
-                </nav>
-                <button className="menu-btn" onClick={toggleMenu}>
-                    <FontAwesomeIcon icon={showMenu ? faTimes : faBars} />
-                </button>
+                        <ul className="ul-options">
+                            <li><a className="aTag" href="#">Home</a></li>
+                            <li><a className="aTag" href="#">Sobre</a></li>
+                            <li><a className="aTag" href="#skills">Skills</a></li>
+                            <li><a className="aTag" href="#">Portfólio</a></li>
+                            <li><a className="aTag" href="#">Contato</a></li>
+                        </ul>
+                        
+                    </nav>
+                    <button className="menu-btn" onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={showMenu ? faTimes : faBars} />
+                    </button>
+                </div>
             </div>
         </div>
     )

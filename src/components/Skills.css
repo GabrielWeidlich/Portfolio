@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    margin-top: 3rem;
+    width: 100vh;
+    height: auto;
+    border-radius: 15px;
+    background-color: #3a3939;
+    position: relative;
+    overflow: hidden;
+    color: #f2f2f2;
+}
+
+.skills h3{
+    text-align: center;
+}
+
+.icons-skills{
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: small;
+    margin: 1rem;
+}
+
+.icons-skills div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media(max-width:1000px){
+    .skills{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
