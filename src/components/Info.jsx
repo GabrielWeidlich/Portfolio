@@ -15,10 +15,10 @@ export default (props) => {
                     </div>
 
                     <div className="info-content">
-                        <button className="contact-btn">Contate me</button><br />
+                        <a href="#contact"><button className="contact-btn">Contate me</button></a><br />
                         
-                            <a href="https://github.com/GabrielWeidlich" target="blank"><FontAwesomeIcon className="icons" icon={faSquareGithub} style={{ color: '#f2f2f2' }} /></a>
-                            <a href="https://www.linkedin.com/in/gabriel-weidlich-/" target="blank"><FontAwesomeIcon className="icons" icon={faLinkedin} style={{ color: '#f2f2f2' }} /></a>
+                            <a href="https://github.com/GabrielWeidlich" target="blank"><FontAwesomeIcon className="icons" icon={faSquareGithub} size="lg" style={{ color: '#f2f2f2' }} /></a>
+                            <a href="https://www.linkedin.com/in/gabriel-weidlich-/" target="blank"><FontAwesomeIcon className="icons" size="lg" icon={faLinkedin} style={{ color: '#f2f2f2' }} /></a>
                         
                     </div>
                 

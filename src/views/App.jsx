@@ -4,6 +4,7 @@ import Info from "../components/Info"
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Portfolio from '../components/Portfolio'
+import Contact from '../components/Contact'
 
 const App = (props)=>{
     return(
@@ -13,6 +14,7 @@ const App = (props)=>{
             <About/>
             <Skills/>
             <Portfolio/>
+            <Contact/>
         </div>
     )
 }

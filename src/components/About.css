@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     justify-content: center;
 }
@@ -11,19 +11,18 @@
     background-color: #3a3939;
     position: relative;
     overflow: hidden;
-    
     line-height: 1rem;
     color: #f2f2f2;
 }
 
-.about span{
+.about span {
     font-weight: normal;
     line-height: 50px;
     font-size: 3rem;
     font-weight: bold;
 }
 
-.about p{
+.about p {
     color: white;
     line-height: 1.5rem;
     text-align: justify;
@@ -31,11 +30,11 @@
     font-size: 17px;
 }
 
-.about-text{
+.about-text {
     padding-left: 2rem;
 }
 
-.about-line{
+.about-line {
     background-color: white;
     min-height: 50rem;
     width: 1px;
@@ -43,20 +42,19 @@
     position: absolute;
 }
 
-@media(max-width:1000px){
-    .about{
+@media(max-width:1000px) {
+    .about {
         margin-left: 1rem;
         margin-right: 1rem;
     }
 }
 
-@media(max-width: 900px){
-    .about span{
+@media(max-width: 900px) {
+    .about span {
         font-size: 2.8rem;
     }
 
-    .about p{
+    .about p {
         font-size: 17px;
     }
 }
-

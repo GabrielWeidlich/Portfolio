@@ -17,7 +17,7 @@ export default (props)=>{
                     <div><FontAwesomeIcon icon={faReact} style={{fontSize: '4rem', color:'#A2F9FA'}}/><span>REACTJS</span></div>
                     <div><FontAwesomeIcon icon={faGithub} style={{fontSize: '4rem', color:'#9FCAD9'}}/><span>GITHUB</span></div>
                     <div><FontAwesomeIcon icon={faBootstrap} style={{fontSize: '4rem', color:'#9FACC8'}}/><span>BOOTSTRAP</span></div>
-                    <div><FontAwesomeIcon icon={faDatabase} style={{fontSize: '4rem', color:'#9FACD9'}}/><span>MONGODB DATABASE</span></div>
+                    <div><FontAwesomeIcon icon={faDatabase} style={{fontSize: '4rem', color:'#9FACD9'}}/><span>MONGODB </span></div>
                 </div>
             </div>
         </div>
