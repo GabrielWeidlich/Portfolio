@@ -12,10 +12,20 @@
     position: relative;
     overflow: hidden;
     color: #f2f2f2;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    box-shadow: 2px 2px 5px #1a1919;
+}
+
+.skills.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .skills h2{
     text-align: center;
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 .icons-skills{
@@ -33,6 +43,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 @media(max-width:1000px){

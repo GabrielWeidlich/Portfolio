@@ -10,6 +10,15 @@
     overflow: hidden;
     line-height: 1rem;
     color: #f2f2f2;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    box-shadow: 2px 2px 5px #1a1919;
+}
+
+.contact.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-info {
@@ -26,24 +35,28 @@
 .contact h2 {
     text-align: center;
     font-weight: 600;
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 .phone {
     width: 23vh;
     padding: 1rem 0 1rem 1rem;
     align-items: center;
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 .email {
     width: 38vh;
     padding: 0 0 1rem 1rem;
     align-items: center;
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 .location {
     width: 20vh;
     padding: 0 0 1rem 1rem;
     align-items: center;
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 
@@ -52,12 +65,21 @@
     padding: 0 1rem 1rem 1rem;
     display: flex;
     justify-content: end;
+    
 }
+
+
 
 .contact-sub-info a {
-    padding-left: 1rem;
+    margin-left: 1rem;
+    box-shadow: 2px 2px 5px #1a1919;
+    transition: opacity 0.3s ease-out;
+    
 }
 
+.contact-sub-info a:hover{
+    opacity: 0.6;
+}
 
 @media(max-width:1000px) {
     .contact {

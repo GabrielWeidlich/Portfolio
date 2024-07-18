@@ -1,10 +1,16 @@
 import React from "react";
 import './About.css'
+import { useInView } from "react-intersection-observer";
 
 export default (props) => {
+    const {ref , inView}=useInView({
+        triggerOnce:false,
+        threshold:0.1
+    })
+
     return (
         <div className="container">
-            <div className="about" id="about">
+            <div ref={ref} className={`about ${inView ? 'show' : ''}`} id="sobre">
                 <div className="about-line"></div>
                 <div className="about-text">
                     <h3>Sobre mim</h3>

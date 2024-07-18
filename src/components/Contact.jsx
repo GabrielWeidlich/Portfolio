@@ -2,12 +2,18 @@ import React from "react";
 import './Contact.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useInView } from "react-intersection-observer";
 
 export default (props) => {
+    const {ref, inView}= useInView({
+        triggerOnce: false,
+        threshold:0.1
+    })
+
     return (
-        <div className="container" id="contact">
-            <div className="contact">
+        <div className="container" >
+            <div ref={ref} className={`contact ${inView ? 'show' : ''}`} id="contato">
                 <h2>Contato</h2>
                 <div className="contact-info">
 
@@ -25,7 +31,7 @@ export default (props) => {
 
                 <div className="contact-sub-info">
                     <a href="https://www.instagram.com/gabriel_dlich/" target="blank"><FontAwesomeIcon icon={faInstagram} size="lg" style={{color: '#f2f2f2'}}/></a>
-                    <a href="https://github.com/GabrielWeidlich" target="blank"><FontAwesomeIcon icon={faGithub} size="lg" style={{color: '#f2f2f2'}}/></a>
+                    <a href="https://github.com/GabrielWeidlich" target="blank"><FontAwesomeIcon icon={faGithubSquare} size="lg" style={{color: '#f2f2f2'}}/></a>
                     <a href="https://www.linkedin.com/in/gabriel-weidlich-/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="lg" style={{color: '#f2f2f2'}}/></a>
                 </div>
 

@@ -3,11 +3,17 @@ import './Skills.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss3Alt, faJs, faNode,faReact, faGithub, faBootstrap } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { useInView } from "react-intersection-observer"
 
 export default (props)=>{
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1
+    })
+
     return (
         <div className="container">
-            <div className="skills" id="skills">
+            <div ref={ref} className={`skills ${inView ? 'show' : ''}`} id="skills">
                 <h2>Skills</h2>
                 <div className="icons-skills">
                     <div><FontAwesomeIcon icon={faHtml5} style={{fontSize: '4rem', color:'#74EBD5'}}/><span>HTML5</span></div>

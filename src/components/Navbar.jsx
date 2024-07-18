@@ -1,51 +1,51 @@
 import React from "react"
 import './Navbar.css'
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFire, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { useInView } from "react-intersection-observer"
 
 
 export default (props) => {
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
-        setShowMenu(!showMenu);
+        setShowMenu(!showMenu)
+
     };
 
-    const handleResize = () => {
-        if (window.innerWidth >= 1200) {
-            setShowMenu(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1
+    })
 
     return (
         <div className="container">
-            <div className="navbar">
-                
-                    <FontAwesomeIcon className="fire-icon" icon={faFire} size="2xl" style={{ color: '#74EBD5'}} />
+            <div ref={ref} className={`navbar ${inView ? 'show' : ''}`}>
+
+
 
                 <div className="nav-content">
-                    <nav className={`nav-options ${showMenu ? 'show' : ''}`}>
+                    <FontAwesomeIcon className="fire-icon" icon={faFire} size="2xl" style={{ color: '#74EBD5' }} />
 
-                        <ul className="ul-options">
-                            <li><a className="aTag" href="#info">Home</a></li>
-                            <li><a className="aTag" href="#about">Sobre</a></li>
-                            <li><a className="aTag" href="#skills">Skills</a></li>
-                            <li><a className="aTag" href="#portfolio">Portfólio</a></li>
-                            <li><a className="aTag" href="#contact">Contato</a></li>
-                        </ul>
-                        
-                    </nav>
-                    <button className="menu-btn" onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={showMenu ? faTimes : faBars} />
-                    </button>
+                    <div className="nav">
+                        <nav className={`nav-options ${showMenu ? 'show' : ''}`}>
+
+                            <ul>
+                                <li><a className="aTag" href="#home">Home</a></li>
+                                <li><a className="aTag" href="#sobre">Sobre</a></li>
+                                <li><a className="aTag" href="#skills">Skills</a></li>
+                                <li><a className="aTag" href="#portfolio">Portfólio</a></li>
+                                <li><a className="aTag" href="#contato">Contato</a></li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <div>
+                        <button className="menu-btn" onClick={toggleMenu}>
+                            <FontAwesomeIcon icon={showMenu ? faTimes : faBars} />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -13,6 +13,19 @@
     overflow: hidden;
     line-height: 1rem;
     color: #f2f2f2;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    box-shadow: 2px 2px 5px #1a1919;
+}
+
+.about.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about h3{
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 .about span {
@@ -20,6 +33,7 @@
     line-height: 50px;
     font-size: 3rem;
     font-weight: bold;
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 .about p {
@@ -28,6 +42,7 @@
     text-align: justify;
     padding-right: 1.5rem;
     font-size: 17px;
+    text-shadow: 1px 1px 1px #1a1919;
 }
 
 .about-text {

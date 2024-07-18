@@ -3,11 +3,19 @@ import './Portfolio.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBootstrap, faCss3, faHtml5, faNode, faJs } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { useInView } from "react-intersection-observer"
 
 export default (props) => {
+
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1
+    })
+
+
     return (
         <div className="container">
-            <div className="portfolio" id="portfolio">
+            <div ref={ref} className={`portfolio ${inView ? 'show' : ''}`} id="portfolio">
 
                 <div className="portfolio-title">
                     <h2>Portfólio</h2>
