@@ -17,7 +17,7 @@ export default (props) => {
                 <div className="info-text">
                     <h3 >Olá, eu sou Gabriel Weidlich!</h3>
                     <div>
-                        <span className="span1">Desenvolvedor</span><span className="span2">FullStack</span>
+                        <span className="span1">Desenvolvedor</span><span className="span2">Full </span><span className="span3">Stack</span>
                     </div>
 
                 </div>

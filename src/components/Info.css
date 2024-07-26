@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     justify-content: center;
 }
@@ -13,20 +13,20 @@
     overflow: hidden;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
     box-shadow: 2px 2px 5px #1a1919;
 }
 
-.info.show{
+.info.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-.info-text{
+.info-text {
     display: flex;
     flex-direction: column;
     padding: 1rem 0 0 1rem;
-    text-shadow: 3px 3px 3px #1a1919;   
+    text-shadow: 3px 3px 3px #1a1919;
 }
 
 .info-text h3 {
@@ -36,39 +36,53 @@
     padding-bottom: 0.5rem;
 }
 
-.info-text .span1{
-    background: linear-gradient(to right,#74EBD5 ,#9FACE6 );
+.info-text .span1 {
+    background: linear-gradient(to right, #74EBD5, #9FACE6);
     background-clip: text;
-    color: #9FCAD9;
+    color: #A2F9FA;
+    
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 1.2;
     margin-right: 1.2rem;
-    
+
 }
-.info-text .span2{
-    background: linear-gradient(to right,#74EBD5 ,#9FACE6 );
+
+.info-text .span2 {
+    background: linear-gradient(to right, #74EBD5, #9FACE6);
+    background-clip: text;
+    color: #9FCAD9;
+    
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+.info-text .span3 {
+    background: linear-gradient(to right, #74EBD5, #9FACE6);
     background-clip: text;
     color: #9FACC8;
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 1.2;
-    
+
 }
+
+
 
 .icons {
     margin: 0.8rem 0.8rem 0rem 0rem;
     font-size: 2.2rem;
     box-shadow: 2px 2px 2px #1a1919;
     transition: opacity 0.5s ease-out;
-    
+
 }
 
-.icons:hover{
+.icons:hover {
     opacity: 0.7;
 }
 
-.info-content{
+.info-content {
     padding: 3rem 0 0.7rem 1rem;
 }
 
@@ -78,7 +92,7 @@
     padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     color: #f2f2f2;
     font-weight: 600;
-    background: linear-gradient(to right,#74EBD5 ,#9FACE6 );
+    background: linear-gradient(to right, #74EBD5, #9FACE6);
     cursor: pointer;
     border: none;
     box-shadow: 2px 2px 2px #1a1919;
@@ -86,29 +100,34 @@
     text-shadow: 2px 2px 10px #1a1919;
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
     opacity: 0.8;
 }
 
 @media (max-width: 1000px) {
-    .info{
+    .info {
         margin-right: 1rem;
         margin-left: 1rem;
     }
 
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
 
-    .info-text .span1{
-        font-size: 3rem;
-    }
-    .info-text .span2{
+    .info-text .span1 {
         display: block;
         font-size: 3rem;
     }
 
-    .info-content{
+    .info-text .span2 {
+        font-size: 3rem;
+    }
+    .info-text .span3 {
+        font-size: 3rem;
+        color: #9FCAD9;
+    }
+
+    .info-content {
         padding-top: 4rem;
     }
 }
