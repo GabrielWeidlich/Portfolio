@@ -5,7 +5,7 @@ import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-
 import { faGithubSquare, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useInView } from "react-intersection-observer";
 
-export default (props) => {
+const Contact = () => {
     const {ref, inView}= useInView({
         triggerOnce: false,
         threshold:0.1
@@ -39,3 +39,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Contact;

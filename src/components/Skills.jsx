@@ -5,7 +5,7 @@ import { faHtml5, faCss3Alt, faJs, faNode,faReact, faGithub, faBootstrap } from 
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer"
 
-export default (props)=>{
+const Skills = () =>{
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1
@@ -29,3 +29,5 @@ export default (props)=>{
         </div>
     )
 }
+
+export default Skills;

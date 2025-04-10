@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useInView } from "react-intersection-observer";
 
-export default (props) => {
+const Info = () => {
     const { ref, inView } = useInView({
         triggerOnce: false, 
         threshold: 0.1
@@ -34,3 +34,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Info;

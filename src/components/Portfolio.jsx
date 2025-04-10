@@ -5,7 +5,7 @@ import { faBootstrap, faCss3, faHtml5, faNode, faJs } from "@fortawesome/free-br
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer"
 
-export default (props) => {
+const Portfolio =() => {
 
     const { ref, inView } = useInView({
         triggerOnce: false,
@@ -51,3 +51,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Portfolio;

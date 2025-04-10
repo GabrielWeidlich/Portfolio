@@ -6,7 +6,7 @@ import { faFire, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { useInView } from "react-intersection-observer"
 
 
-export default (props) => {
+const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
@@ -51,3 +51,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Navbar;

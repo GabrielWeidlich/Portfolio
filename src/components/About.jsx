@@ -2,7 +2,7 @@ import React from "react";
 import './About.css'
 import { useInView } from "react-intersection-observer";
 
-export default (props) => {
+const About = () => {
     const {ref , inView}=useInView({
         triggerOnce:false,
         threshold:0.1
@@ -22,3 +22,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default About;
