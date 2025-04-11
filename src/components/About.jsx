@@ -3,9 +3,9 @@ import './About.css'
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
-    const {ref , inView}=useInView({
-        triggerOnce:true,
-        threshold:0.3
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.3
     })
 
     return (
@@ -16,7 +16,10 @@ const About = () => {
                     <h3>Sobre mim</h3>
                     <span>Sou um Desenvolvedor </span><br />
                     <span>Full Stack </span>
-                    <p>Olá, sou Gabriel, da cidade de Anápolis, Goiás. Sou desenvolvedor Full Stack com um foco maior no Backend utilizando Node.js. Estou em uma jornada de 1 ano e meio cursando Engenharia de Software e aprimorando minhas habilidades em programação. Além de me especializar em Node.js, também tenho conhecimento em Frontend, utilizando HTML, CSS e JavaScript. Atualmente, estou aprendendo React para expandir minhas competências. Busco me integrar a uma equipe de desenvolvimento onde possa aplicar minhas competências técnicas para criar soluções eficientes e acessíveis. Meu objetivo é continuar aprendendo e evoluindo como desenvolvedor, contribuindo para projetos desafiadores que valorizem boas práticas de design e proporcionem experiências de usuário envolventes.</p>
+                    <p>Olá, sou Gabriel, de Anápolis, Goiás. Sou desenvolvedor Full Stack com foco principal no Backend, especialmente utilizando Node.js. Estou há mais de dois anos nessa jornada, cursando Engenharia de Software e me dedicando constantemente ao aprimoramento das minhas habilidades técnicas.
+                        Atualmente, estou trabalhando no desenvolvimento de uma API robusta para um sistema de mercado, utilizando tecnologias como C#, .NET, e PostgreSQL. Também venho aplicando Docker para containerização das aplicações, garantindo ambientes mais estáveis e escaláveis.
+                        Embora meu foco seja backend, também possuo conhecimento em Frontend, com experiência em HTML, CSS e JavaScript, e estou atualmente aprendendo React para ampliar ainda mais meu leque de competências.
+                        Busco oportunidades para integrar uma equipe de desenvolvimento onde eu possa aplicar minhas habilidades técnicas, colaborar com projetos desafiadores e continuar crescendo como profissional. Valorizo boas práticas de desenvolvimento, design limpo e soluções que ofereçam experiências de usuário acessíveis e eficientes.</p>
                 </div>
             </div>
         </div>
