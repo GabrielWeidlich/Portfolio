@@ -2,7 +2,7 @@ import React from "react"
 import './Navbar.css'
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFire, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faTimes, faLaptopCode } from "@fortawesome/free-solid-svg-icons"
 import { useInView } from "react-intersection-observer"
 
 
@@ -15,8 +15,8 @@ const Navbar = () => {
     };
 
     const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.1
+        triggerOnce: true,
+        threshold: 0.3
     })
 
     return (
@@ -26,7 +26,7 @@ const Navbar = () => {
 
 
                 <div className="nav-content">
-                    <FontAwesomeIcon className="fire-icon" icon={faFire} size="2xl" style={{ color: '#74EBD5' }} />
+                    <FontAwesomeIcon className="laptop-icon" icon={faLaptopCode} size="2xl" style={{ color: '#74EBD5' }} />
 
                     <div className="nav">
                         <nav className={`nav-options ${showMenu ? 'show' : ''}`}>

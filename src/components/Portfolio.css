@@ -36,7 +36,16 @@
 
 .content-img {
     width: 50%;
-    background-image: url('../../public/img/NodeNotes.png');
+    background-image: url('../../public/img/nodeNotes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px 0 0 15px;
+}
+
+.content-portfolio-img{
+    width: 50%;
+    background-image: url('../../public/img/Portfolio.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +78,7 @@
     border: none;
     border-radius: 15px;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 1rem;
     cursor: pointer;
     box-shadow: 2px 2px 2px #1a1919;
     transition: opacity 0.5s ease-out;
@@ -87,7 +96,7 @@
     border: none;
     border-radius: 15px;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1rem 0;
     cursor: pointer;
     box-shadow: 2px 2px 2px #1a1919;
     transition: opacity 0.5s ease-out;
@@ -109,6 +118,14 @@
     }
 
     .content-img {
+        height: 13rem;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content-portfolio-img{
         height: 13rem;
         width: 100%;
         border-radius: 15px 15px 0 0;

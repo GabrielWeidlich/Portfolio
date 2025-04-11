@@ -58,7 +58,7 @@ ul {
     flex-direction: row;
 }
 
-.fire-icon {
+.laptop-icon {
     font-size: 2rem;
     position: absolute;
 
@@ -84,7 +84,7 @@ ul {
         align-items: normal;
     }
 
-    .fire-icon {
+    .laptop-icon {
         padding: 1.1rem 0 0 0;
     }
 
