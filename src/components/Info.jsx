@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 const Info = () => {
     const { ref, inView } = useInView({
         triggerOnce: true, 
-        threshold: 0.3
+        threshold: 0.1
     })
 
     return (
