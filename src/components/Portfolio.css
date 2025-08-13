@@ -52,6 +52,15 @@
     border-radius: 15px 0 0 15px;
 }
 
+.content-dsense-img {
+     width: 50%;
+    background-image: url('../../public/img/Dsense.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px 0 0 15px;
+}
+
 .content-info {
     width: 50%;
     padding-top: 1rem;
@@ -126,6 +135,14 @@
     }
 
     .content-portfolio-img{
+        height: 13rem;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content-dsense-img{
         height: 13rem;
         width: 100%;
         border-radius: 15px 15px 0 0;
